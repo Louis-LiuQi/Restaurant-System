@@ -1,0 +1,58 @@
+
+
+/********************訂單頁CSS*************************/
+.cart_info>ul{
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	/*padding: 5px 6px;*/
+}
+.cart_info>ul>li:first-child{
+	box-sizing: border-box;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 2.5%;
+	justify-content: space-between;
+	background: #E8DFD7;
+}
+.cart_info>ul>li+li{
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #DCD1C9;
+	padding: 15px 0;
+	justify-content: space-between;
+}
+
+.cart_info>ul>li:first-child div{
+	font-weight: normal;
+	padding: 10px 0;
+}
+.cart_info>ul>li div{
+	font-weight: bold;
+	font-size: 16px;
+}
+.money{
+	flex:2;
+}
+.count{
+	flex:5;
+}
+.nums{
+	flex:4;
+	text-align: right;
+}
+.nums span{
+	display: inline-block;
+	width: 30px;
+	height: 25px;
+	background: #39566f;
+	text-align: center;
+	line-height: 25px;
+	margin-left: 1%;
+	border-radius: 5px;
+	color: #fff;
+}

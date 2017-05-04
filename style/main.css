@@ -1,0 +1,287 @@
+
+body{
+	background: #e8dfd7;
+	margin: 1px;
+}
+/**********************************訂餐首頁**************************/
+.dine_in,.dine_out{
+	width: 70%;
+	height: 420px;
+	margin: 30px auto;
+}
+.dine_in{
+	padding-top: 25px;
+}
+.dine_in img,.dine_out img{
+	width: 100%;
+	height: 420px;
+}
+
+/*餐牌种类*/
+.shop_list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 90%;
+	margin: auto;
+}
+.shop_list li{
+	position: relative;
+	width: 48%;
+	margin: 5px 5px;
+	height: 300px;
+}
+.shop_list li img{
+	width: 100%;
+	height: 300px;
+}
+.shop_list li a p{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	bottom:5px;
+	left: 10px;
+}
+/**************************************navbar*************************/
+.navbar{
+	height: 50px;
+	border-top: 1px solid #d9d9d9;
+	/*margin-top: 5px;*/
+	width: 100%;
+	background: #f3f0eb;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.navbar ul{
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar ul li{
+	height: 40px;
+	width: 20%;
+	text-align: center;
+}
+.navbar ul li a{
+	display: block;
+	height: 50px;
+}
+.navbar ul li a p{
+	color: #61605e;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+}
+.navbar ul li a img{
+	width: 20px;
+	height: 20px;
+	margin: auto;
+}
+
+/************************************menu頁面********************************/
+.menu{
+	display: flex;
+
+}
+.food_list{
+	flex:2;
+}
+.food_intr{
+	flex:5;
+}
+.food_list ul{
+	width: 95%;
+	margin: auto;
+}
+.food_list ul li:first-child{
+	background: #fff;
+}
+.food_list ul li{
+	width: 90%;
+	text-align: left;
+	margin: 15px auto;
+	border-radius:5px;
+}
+.food_list ul li a{
+	padding-left: 8px;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color:#61605e;
+	font-size: 14px;
+	font-weight: bold;
+}
+.food_intr img{
+	width: 100%;
+	height: auto;
+}
+.food_intr>ul{
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 5px 6px;
+}
+.food_intr>ul>li{
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #DCD1C9;
+	padding: 5px 0;
+}
+.food_intr>ul>li div{
+	width: 100%;
+	height: 25px;
+}
+.food_info{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.food_info div{
+	/*border:1px solid red;*/
+	line-height: 25px;
+}
+.food_info div+div{
+	text-align: right;
+}
+.food_name{
+	font-weight: bold;
+}
+.price{
+	color: #a19188;
+	font-size: 16px;
+}
+.num span{
+	display: inline-block;
+	width: 30px;
+	height: 25px;
+	background: #39566f;
+	text-align: center;
+	line-height: 25px;
+	margin-left: 1%;
+	border-radius: 5px;
+	color: #fff;
+}
+
+/*****************************訂單提示信息*********************************/
+.prompt{
+	margin: 10% auto;
+	width: 100%;
+}
+.prompt img{
+	width: 60px;
+	height: auto;
+	margin: auto;
+	margin-bottom: 15px;
+}
+.prompt h2,.prompt p{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.prompt h2{
+	font-size: 16px;
+	font-weight: bold;
+}
+.more{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	background: #E8DFD7;
+	padding-bottom: 10px;
+}
+.more_food,.revise{
+	width: 90%;
+	margin: auto;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.more_food{
+	background: #BFA489;
+	border-radius: 5px;
+}
+.more_food a{
+	display: block;
+	color: #fff;
+	line-height: 50px;
+}
+.revise{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin-top: 10px;
+}
+.revise div{
+	width: 45%;
+	background: #454545;
+	border-radius: 5px;
+}
+.revise div a{
+	width: 100%;
+	display: block;
+	color: #fff;
+	line-height: 50px;
+}
+
+/****************************適配移動端/*****************************/
+@media screen and (max-width: 768px){
+body{
+	background: #e8dfd7;
+	margin: 0px;
+}
+/*index页*/
+.header>div>h1{
+	font-size: 16px;
+}
+.header>div>p>a{
+	font-size: 12px;
+}
+.dine_in,.dine_out{
+	width: 90%;
+	height: 200px;
+	margin: 30px auto;
+}
+.dine_in img,.dine_out img{
+	width: 100%;
+	height: 200px;
+}
+
+/*dine_in页*/
+
+
+/*餐牌种类*/
+.shop_list{
+	width: 100%;
+}
+.shop_list li{
+	position: relative;
+	margin: 1% 1%;
+	height: auto;
+}
+.shop_list li img{
+	height: auto;
+}
+.shop_list li p{
+	font-size: 14px;
+	bottom:8%;
+	left: 5%;
+}
+/*navbar*/
+.navbar ul li a p{
+	font-size: 12px;
+}
+.navbar ul li a img{
+	width: 20px;
+	height: 20px;
+}
+.prompt{
+	margin: 40% auto;
+}
+}
+

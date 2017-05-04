@@ -1,0 +1,17 @@
+
+/*reset*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	color:#57514e;
+}
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	display: block;
+}
